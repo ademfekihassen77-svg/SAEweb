@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>acceuil SAE</title>
+    <link rel="stylesheet" href="csSAE.css">
+</head>
+<body>
+<header>
+
+    <img src="image/logo_iut.png" alt="Logo IUT de Vélizy" class="logo-iut">
+    <h1>IUT de velizy  – Département Informatique</h1>
+</header>
+<nav>
+    <ul>
+        <!-- Accueil -->
+        <li><a href="index.html">Accueil</a></li>
+
+        <!-- Menu 1 -->
+        <li>
+            <a href="tache_1/tache_1_intro.html">
+                tache 1
+                <span class="arrow"></span>
+            </a>
+            <ul>
+                <li><a href="tache_1/tableau_doctolib.html">tableau doctolib</a></li>
+                <li><a href="tache_1/tableau_Medecins_sans_frontière.html">tableau Medecins sans frontière</a></li>
+                <li><a href="tache_1/restos.html">restos du coeur</a></li>
+            </ul>
+        </li>
+
+        <!-- Menu 2 -->
+        <li>
+            <a href="tache_2/tache_2_intro.html">
+                tache 2
+                <span class="arrow"></span>
+            </a>
+            <ul>
+                <li><a href="tache_2/partie_1.html">partie 1</a></li>
+            </ul>
+        </li>
+
+        <!-- Menu 3 -->
+        <li>
+            <a href="tache_3/tache_3_intro.html">
+                tache 3
+            </a>
+            <ul>
+                <li><a href="tache_3/solution.html">solution </a></li>
+
+            </ul>
+        </li>
+
+        <!-- Annexe -->
+        <li><a href="annexe.html">Annexe</a></li>
+    </ul>
+</nav>
+<main class="accueil">
+
+
+    <h2>Informations générales</h2>
+
+    <div class="info-block">
+        <strong>IUT de Vélizy – Département Informatique</strong>
+    </div>
+
+    <div class="info-block">
+        <strong><abbr title="Situation d'Apprentissage et d'Évaluation">SAÉ</abbr> :</strong> S1.05 – S1.06
+    </div>
+
+    <div class="info-block">
+        <strong>Groupe :</strong> A
+    </div>
+
+    <div class="info-block">
+        <strong>Étudiants :</strong> Feki Hassen Adem – Regulier Jules
+    </div>
+
+    <div class="info-block">
+        <strong>Année universitaire :</strong> 2025 – 2026
+    </div>
+
+    <div class="info-block">
+        <strong>Secteur étudié :</strong> Secteur Q – Santé humaine et action sociale
+    </div>
+
+</main>
+<!-- interface de connextion/utilisateur  -->
+<section class="auth" aria-labelledby="auth-title">
+    <h2 id="auth-title">Espace utilisateur</h2>
+
+    <div class="auth-container">
+        <!-- Connexion -->
+        <form class="auth-box" aria-labelledby="login-title">
+            <h3 id="login-title">Connexion</h3>
+
+            <label for="login-email">Adresse e-mail</label>
+            <input type="email" id="login-email" name="email" required>
+
+            <label for="login-password">Mot de passe</label>
+            <input type="password" id="login-password" name="password" required>
+
+            <div class="checkbox">
+                <input type="checkbox" id="remember">
+                <label for="remember">Se souvenir de moi</label>
+            </div>
+
+            <button type="submit">Se connecter</button>
+        </form>
+
+        <!-- Inscription -->
+        <form class="auth-box" aria-labelledby="register-title">
+            <h3 id="register-title">Inscription</h3>
+
+            <label for="register-name">Nom complet</label>
+            <input type="text" id="register-name" name="name" required>
+
+            <label for="register-email">Adresse e-mail</label>
+            <input type="email" id="register-email" name="email" required>
+
+            <label for="register-password">Mot de passe</label>
+            <input type="password" id="register-password" name="password" required>
+
+            <!-- Genre -->
+            <fieldset class="radio-group">
+                <legend>Genre</legend>
+
+                <label>
+                    <input type="radio" name="genre" value="homme" required>
+                    Homme
+                </label>
+
+                <label>
+                    <input type="radio" name="genre" value="femme">
+                    Femme
+                </label>
+
+                <label>
+                    <input type="radio" name="genre" value="autre">
+                    Autre
+                </label>
+            </fieldset>
+
+            <!-- Conditions d'utilisation -->
+            <div class="checkbox">
+                <input type="checkbox" id="cgu" required>
+                <label for="cgu">
+                    J’accepte les <a href="#">conditions d’utilisation</a>
+                </label>
+            </div>
+
+            <button type="submit">Créer un compte</button>
+        </form>
+    </div>
+</section>
+
+
+
+
+
+
+<footer>
+    <a class="prev" href="annexe.html">⟵ Précédent</a>
+    <p class="prenom" >Adem Fekihasssen - Jules Regulier - Info1-A</p>
+    <a class="next" href="tache_1/tache_1_intro.html">Suivant ⟶</a>
+</footer>
+</body>
+</html>

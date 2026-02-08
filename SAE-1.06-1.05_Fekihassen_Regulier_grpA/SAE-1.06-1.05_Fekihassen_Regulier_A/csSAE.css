@@ -1,0 +1,328 @@
+/* ====== Style global ====== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ====== Header ====== */
+header {
+    background: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .logo-iut {
+    height: 70px;
+    width: auto; }
+
+    header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    text-align: center
+}
+
+/* ====== Navigation ====== */
+nav {
+    background: #0066cc;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #004080;
+}
+
+/* Sous-menu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background: #0059b3;
+    min-width: 180px;
+    z-index: 1000;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    color: #fff;
+}
+
+nav ul li ul li a:hover {
+    background: #003d66;
+}
+
+/* ====== Main ====== */
+main {
+    padding: 20px;
+    max-width: 900px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+h2 {
+    color: #004080;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+}
+
+.info-block {
+    background: #e6f0ff;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #0066cc;
+    border-radius: 4px;
+    }
+
+main.accueil {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+/* Auth section */
+.auth {
+    max-width: 1100px;
+    margin: 60px auto 120px;
+    padding: 20px;
+}
+
+.auth h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.auth-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.auth-box {
+    background: linear-gradient(145deg, #ffffff, #f1f5f9);
+    padding: 30px;
+    width: 340px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.auth-box h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1f2937;
+}
+
+.auth-box label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+/* entree utilisateur */
+
+.auth-box input[type="text"],
+.auth-box input[type="email"],
+.auth-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 1rem;
+}
+
+.auth-box input:focus {
+    outline: 3px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* Radio group */
+.radio-group {
+    border: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.radio-group legend {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+/* Checkbox */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+/* liens */
+.auth-box a {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+/* Boutton */
+.auth-box button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.auth-box button:hover,
+.auth-box button:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+
+/* tableau des entreprise  */
+
+section.table,td,th {
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    text-align: center;
+
+
+}
+
+
+th, td {
+    padding: 20px
+}
+th{
+    background-color: #bcbcbc;
+}
+dl{
+    text-align: left;
+}
+section#tableau{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+/* ====== Section (Annexes) ====== */
+section {
+    padding: 20px;
+    max-width: 900px;
+    background: white;
+    margin: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+
+}
+
+section h2 {
+    color: #004080;
+}
+
+section ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+section ul li a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+
+footer {
+
+    display: flex;
+    justify-content: space-between; /* gauche - centre - droite */
+    align-items: center;
+    padding: 15px;
+    background: #004080;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: #0066cc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
